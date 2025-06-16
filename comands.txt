@@ -1,0 +1,55 @@
+ipconfig
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
+nslookup
+ping <IP or DNS>
+pathping <IP or DNS>
+netstat
+arp -a
+hostname
+getmac
+tracert <IP or DNS>
+resmon
+
+--------------------------------------------------------------------------------------------------------------------
+
+# Display IP address, subnet mask, and default gateway
+ipconfig
+
+# Clear DNS cache
+ipconfig /flushdns
+
+# Release current IP address
+ipconfig /release
+
+# Request a new IP address from DHCP
+ipconfig /renew
+
+# Query DNS to get IP of a domain or vice versa
+nslookup example.com
+
+# Check connectivity to a host (IP or domain)
+ping 8.8.8.8
+ping google.com
+
+# Trace route + packet loss information to a destination
+pathping 8.8.8.8
+
+# Display active connections and listening ports
+netstat
+
+# Display ARP table (IP ↔ MAC address mappings)
+arp -a
+
+# Show system's hostname
+hostname
+
+# Display MAC addresses of network interfaces
+getmac
+
+# Trace route to a host
+tracert google.com
+
+# Open Resource Monitor (to view ports in use)
+resmon
